@@ -49,8 +49,19 @@ a.skip:focus{
 footer{
   background-color: #8B4513;
   color: white;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+}
+
+.body ul{
+  padding-bottom: 2%;
+}
+.body li{
+  display: list-item;
+  list-style-type: disc;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  line-height: 1.5em;
 }
 
 /* This is my code for the overlays on my visits page */
@@ -87,7 +98,7 @@ img{
   background-color: white;
 }
 
-.container:hover .overlay, .container:active .overlay {
+.container:hover .overlay, .container:active .overlay, .container:focus .overlay {
   opacity: .8;
 }
 
@@ -191,6 +202,29 @@ header{
           text-decoration-style: dotted;
 }
 
+.dict_nav{
+  text-align: center;
+  padding-bottom: 2%;
+  /*position: sticky;*/
+  top: 5%;
+}
+
+.dict_nav a{
+  text-align: center;
+  background-color: #8B4513;
+  color: #fff;
+  border: 1px solid #000;
+  text-decoration: none;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 3px;
+}
+
+.dict_nav a:hover, .dict_nav a:focus{
+  background-color: #8B45;
+  border: 1px dotted #000;
+  color: #000;
+}
+
 @media screen and (min-width: 850px){
   .title{
     font-size: 50px;
@@ -220,7 +254,7 @@ header{
 
 @media screen and (prefers-reduced-motion:reduce){
   #logo{
-    -webkit-animation: logo_wiggle 0s;
-            animation: logo_wiggle 0s;
+    -webkit-animation: spin 0s;
+            animation: spin 0s;
   }
 }
