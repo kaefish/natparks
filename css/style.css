@@ -1,0 +1,226 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  background-color: bisque;
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding: 0 30px;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: #8B4513;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* This is my code for the overlays on my visits page */
+img{
+  max-height: 350px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.container {
+  position: relative;
+  margin: 10px;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: white;
+}
+
+.container:hover .overlay, .container:active .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: black;
+  font-size: 43px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*Here ends the code for the overlays */
+
+
+@-webkit-keyframes spin{
+  100% { -webkit-transform: rotate(360deg); }
+
+}
+
+@keyframes spin{
+  100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+} 
+
+.logo{
+  position: relative;
+  top: 30px;
+  left: 35%;
+  width: 30%;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation:spin 3s linear;
+    -moz-animation:spin 3s linear;
+          animation:spin 3s linear;
+}
+
+header{
+  background: #8B4513;
+  padding: 1% 1%;
+  font-variant: small-caps;
+  border-bottom: 3px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav_links{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title{
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.nav_item a{
+  color:  bisque;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.nav_item .active{
+  font-weight: 500;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.nav_item a:hover, a:focus{
+  color: #50C7C7;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+@media screen and (min-width: 850px){
+  .title{
+    font-size: 50px;
+  }
+
+  header{  
+    -webkit-box-orient: horizontal;  
+    -webkit-box-direction: normal;  
+        -ms-flex-flow: row nowrap;  
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .nav_links{ 
+    -webkit-box-orient: horizontal;  
+    -webkit-box-direction: normal;  
+        -ms-flex-flow: row nowrap;  
+            flex-flow: row nowrap;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+
+@media screen and (prefers-reduced-motion:reduce){
+  #logo{
+    -webkit-animation: logo_wiggle 0s;
+            animation: logo_wiggle 0s;
+  }
+}
