@@ -53,8 +53,10 @@ a.skip:focus{
 footer{
   background-color: #8B4513;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  font-size: 15px;
+  margin-top: 5px;
 }
 
 .body ul{
@@ -85,10 +87,11 @@ img{
 }
 
 .flex-container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-items: center;
 }
 
 .overlay {
@@ -230,11 +233,34 @@ input[type=submit]{
   left: 35%;
   width: 30%;
   border: none;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   -webkit-animation:spin 3s linear;
     -moz-animation:spin 3s linear;
           animation:spin 3s linear;
+}
+
+.rangerimg{
+  position: relative;
+  top: 30px;
+  left: 20%;
+  width: 60%;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ranger-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+.ranger-container img{
+  width: 80%;
 }
 
 header{
@@ -295,16 +321,19 @@ header{
 }
 
 .nav_item a:hover, a:focus{
-  color: #50C7C7;
+  color: #000;
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
 }
 
 .dict_nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   text-align: center;
   padding-bottom: 2%;
-  /*position: sticky;*/
+  position: sticky;
   top: 5%;
 }
 
@@ -314,6 +343,7 @@ header{
   color: #fff;
   border: 1px solid #000;
   text-decoration: none;
+  width: 18px;
   padding: 1px 1px 1px 1px;
   margin: 1px 3px;
 }
@@ -323,6 +353,8 @@ header{
   border: 1px dotted #000;
   color: #000;
 }
+
+@media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 850px){
   .title{
@@ -348,6 +380,24 @@ header{
 
   .nav_item a{
     padding: 10px;
+  }
+
+  .flex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-items: center;
+  }
+
+  .rangerimg{
+    top: 30px;
+    left: 35%;
+    width: 30%;
+  }
+
+  .ranger-container{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
