@@ -3,7 +3,7 @@ body{
   margin: 0;
   padding: 0;
   font-size: 16pt;
-  background-color: bisque;
+  background-color: #ffe4c4;
 }
 
 h1{
@@ -30,7 +30,7 @@ p {
 }
 
 a.skip{
-  background: white;
+  background: #fff;
   left: 0;
   padding: 6px;
   position: absolute;
@@ -47,12 +47,12 @@ a.skip:focus{
 }
 
 :focus{
-  border: 2px solid black;
+  border: 2px solid #000;
 }
 
 footer{
   background-color: #8B4513;
-  color: white;
+  color: #fff;
   padding: 10px;
   text-align: center;
   font-size: 15px;
@@ -78,7 +78,7 @@ img{
   margin-right: auto;
   padding-left: 0;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #000;
 }
 
 .container {
@@ -102,7 +102,7 @@ img{
   right: 0;
   opacity: 0;
   transition: .4s ease;
-  background-color: white;
+  background-color: #fff;
 }
 
 .container:hover .overlay, .container:active .overlay, .container:focus .overlay {
@@ -110,7 +110,7 @@ img{
 }
 
 .text {
-  color: black;
+  color: #000;
   font-size: 43px;
   position: absolute;
   top: 50%;
@@ -161,7 +161,7 @@ label{
 
 input[type=submit]{
   background-color: #8B4513;
-  border: 1px black dotted;
+  border: 1px #000 dotted;
   color: #fff;
   padding: 10px 24px;
   text-decoration: none;
@@ -181,7 +181,7 @@ input[type=submit]{
 }
 
 .dict-container{
-  border: 1px black solid;
+  border: 1px #000 solid;
   width: 320px;
   height: 450px;
   overflow-y: scroll;
@@ -305,26 +305,34 @@ header{
   text-decoration: none;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 
 .nav_item a{
-  color:  bisque;
+  color:  #ffe4c4;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 2%;
+}
+
+li{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nav_item .active{
   font-weight: 500;
   text-decoration: underline;
   color: #fff;
+  background-color: #758649;
 }
 
 .nav_item a:hover, a:focus{
   color: #000;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  background-color: #deb887;
 }
 
 .dict_nav{
@@ -349,7 +357,7 @@ header{
 }
 
 .dict_nav a:hover, .dict_nav a:focus{
-  background-color: #8B45;
+  background-color: #758649;
   border: 1px dotted #000;
   color: #000;
 }
