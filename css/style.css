@@ -328,7 +328,7 @@ li{
   font-weight: 500;
   text-decoration: underline;
   color: #fff;
-  background-color: #4A5530;
+  background-color: #4A5530 ;
 }
 
 .nav_item a:hover, a:focus{
@@ -358,7 +358,7 @@ li{
 }
 
 .dict_nav a:hover, .dict_nav a:focus{
-  background-color: #758649;
+  background-color: #4A5530;
   border: 1px dotted #000;
   color: #000;
 }
