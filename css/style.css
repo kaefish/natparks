@@ -359,8 +359,8 @@ li{
 
 .dict_nav a:hover, .dict_nav a:focus{
   background-color: #4A5530;
-  border: 1px dotted #000;
-  color: #000;
+  border: 2px dotted #000;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {}
