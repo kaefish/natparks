@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="css/html5reset.css">
     <link rel = "stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPJDTV48FX"></script>
 <script>
@@ -22,13 +23,21 @@
     <a class = "skip" href="#skip">Skip to Main Content</a>
     <header>
         <a href = "#skip" class="title"> U.S. National Parks</a>
-        <nav>
+        <nav class = "menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class = menu>
+          <div>
+            <div>
             <ul class="nav_links">
-              <li class="nav_item"><a href = "#skip" class = "active">About The Parks</a></li>
+              <li class="nav_item"><a href = "#skip" class = "active">About</a></li>
               <li class="nav_item"><a href = "myvisits.html">My Visits</a></li>
               <li class="nav_item"><a href = "dict.html">Park Dictionary</a></li>
               <li class="nav_item"><a href = "rangers.html">Become a Ranger</a></li>
             </ul>
+            </div>
+          </div>
+          </div>
         </nav>
     </header>  
       <main>
@@ -54,5 +63,15 @@
         <p>Kaeli Fish &copy; <br/>
           Traveler, Adventurer, Dreamer</p>
       </footer>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
   </body>
 </html>
