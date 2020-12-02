@@ -812,12 +812,5 @@ li{
     transition: color 0s;
   }
 
-  /*.menu-wrap .hamburger > div {
-    transition: all 0s ;
-  }
 
-  .menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(90deg);
-    transition-duration: 0s;
-  }
 }
